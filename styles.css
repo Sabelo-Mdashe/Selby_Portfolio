@@ -1,4 +1,15 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 /* LANDING SECTION STYLES */
+body {
+}
+
 .skewed {
   position: absolute;
   top: 0;
@@ -20,6 +31,22 @@ img {
   margin-top: 150px;
 }
 
+h1 {
+  font-family: "Tapestry", cursive;
+  font-size: 60px;
+}
+
+h2,
+table,
+.profile_text > p,
+h4,
+h5,
+.carousel-item,
+.social_links,
+form > button {
+  font-family: "Cinzel", serif;
+}
+
 .profile_text {
   position: relative;
   margin-top: 150px;
@@ -31,21 +58,157 @@ img {
   display: flex;
 }
 
+nav {
+  position: fixed;
+}
+
 .navbar-nav > li > a {
   text-transform: uppercase;
+  font-family: "Merienda", cursive;
+  font-weight: bold;
 }
 
 .brief {
   display: flex;
   justify-content: space-between;
+  font-family: "Abhaya Libre", serif;
+  font-size: large;
 }
 
 /* ABOUT SECTION STYLES */
 #about > p {
   padding-right: 300px;
+  font-size: large;
+  font-family: "Abhaya Libre", serif;
+}
+
+h6 {
+  font-family: "Abhaya Libre", serif;
+  font-size: large;
+}
+
+.skills {
+  display: flex;
+}
+
+i {
+  color: blue;
 }
 
 /* RESUME SECTION STYLES */
 #resume > p {
   padding-right: 300px;
+  font-family: "Abhaya Libre", serif;
+  font-size: large;
+}
+
+/* PROJECTS SECTION STYLES */
+#projects {
+  margin-bottom: 150px;
+  font-family: "Abhaya Libre", serif;
+  font-size: large;
+}
+
+#projects > div > ul {
+  list-style: none;
+  display: flex;
+}
+
+#projects > div > ul > li {
+  padding-right: 50px;
+}
+
+.projects {
+  max-width: fit-content;
+  display: flex;
+}
+
+/* .projects:hover {
+  border: 1px solid gray;
+  box-shadow: 1px 1px 1px 1px;
+} */
+
+.projects_imgs {
+  width: 500px;
+}
+
+.technologies {
+  font-size: x-small;
+  font-weight: bold;
+}
+
+.technologies > a {
+  margin-left: 450px;
+  font-size: small;
+}
+
+.tech {
+  margin-left: 20px;
+}
+
+.modal-body > img {
+  width: 750px;
+  padding-top: 0;
+}
+
+/* TESTIMONIALS SECTION STYLES */
+#testimonials {
+  height: 500px;
+}
+
+.carousel-inner {
+  /* height: 500px; */
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-caption > img {
+  height: 300px;
+}
+/* CONTACT SECTION STYLES */
+#contact {
+  min-height: 100vh;
+  padding-top: 100px;
+  font-family: "Abhaya Libre", serif;
+  font-size: large;
+}
+
+.contact_info {
+  padding-right: 150px;
+}
+
+.message {
+  padding-top: 80px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+}
+
+textarea {
+  width: 500px;
+  height: 150px;
+}
+
+form > button {
+  width: 500px;
+  height: 50px;
+}
+
+footer {
+  height: 100px;
 }
