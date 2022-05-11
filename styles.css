@@ -6,10 +6,17 @@
   scroll-behavior: smooth;
 }
 
-/* LANDING SECTION STYLES */
-body {
+/* [data-aos] {
+  pointer-events: none;
 }
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
+} */
 
+/* LANDING SECTION STYLES */
 .skewed {
   position: absolute;
   top: 0;
@@ -26,7 +33,7 @@ body {
   transform-origin: top right;
 }
 
-img {
+#landing img {
   position: relative;
   margin-top: 150px;
 }
@@ -58,8 +65,8 @@ form > button {
   display: flex;
 }
 
-nav {
-  position: fixed;
+#navbarNav {
+  justify-content: flex-end;
 }
 
 .navbar-nav > li > a {
@@ -76,6 +83,9 @@ nav {
 }
 
 /* ABOUT SECTION STYLES */
+#about {
+  padding-top: 50px;
+}
 #about > p {
   padding-right: 300px;
   font-size: large;
@@ -91,14 +101,49 @@ h6 {
   display: flex;
 }
 
+.soft_skills {
+  font-family: "Abhaya Libre", serif;
+  font-size: large;
+}
+
 i {
   color: blue;
 }
 
 /* RESUME SECTION STYLES */
-#resume > p {
-  padding-right: 300px;
+#resume {
+  padding-top: 50px;
+}
+
+.duties_list,
+.subjects_list {
+  list-style: circle;
   font-family: "Abhaya Libre", serif;
+  font-size: large;
+}
+
+button {
+  font-family: "Abhaya Libre", serif;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.location {
+  text-align: right;
+  color: blue;
+  font-family: "Abhaya Libre", serif;
+  font-size: large;
+}
+
+.experience > h5,
+.education > h5 {
+  text-align: center;
+}
+
+.experience > p,
+.education > p {
+  font-family: "Abhaya Libre", serif;
+  font-style: italic;
   font-size: large;
 }
 
@@ -107,6 +152,7 @@ i {
   margin-bottom: 150px;
   font-family: "Abhaya Libre", serif;
   font-size: large;
+  padding-top: 50px;
 }
 
 #projects > div > ul {
@@ -154,6 +200,7 @@ i {
 /* TESTIMONIALS SECTION STYLES */
 #testimonials {
   height: 500px;
+  padding-top: 50px;
 }
 
 .carousel-inner {
@@ -169,6 +216,7 @@ i {
 .carousel-caption > img {
   height: 300px;
 }
+
 /* CONTACT SECTION STYLES */
 #contact {
   min-height: 100vh;
@@ -209,6 +257,50 @@ form > button {
   height: 50px;
 }
 
+/* FOOTER SECTION STYLES */
+
 footer {
-  height: 100px;
+  height: 50px;
+  font-family: "Abhaya Libre", serif;
+}
+
+footer > div > div > a,
+footer > div > div > a > i,
+footer > div > div > i {
+  color: white;
+}
+
+footer > div {
+  align-items: center;
+  justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 12000px) {
+  .skewed {
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #landing img {
+    display: none;
+  }
+
+  #about h2 {
+    padding-top: 50px;
+  }
+}
+
+/* @media screen and (max-width: 993px) {
+  #about h2 {
+    padding-top: 0;
+  }
+} */
+
+@media screen and (max-width: 770px) {
+  .skewed {
+    height: 80%;
+  }
 }

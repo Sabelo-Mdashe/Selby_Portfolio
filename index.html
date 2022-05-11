@@ -13,7 +13,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Caveat:wght@400;500&family=Cinzel&family=Merienda&family=Shadows+Into+Light&family=Tapestry&display=swap" rel="stylesheet">
@@ -21,50 +21,51 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+     <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <!-- <a class="nav-link active " aria-current="page" href="#"
+                >Home</a
+              > -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Hello</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- LANDING SECTION -->
     <section id="landing">
     
       <div class="skewed">
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active " aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#resume">Resume</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#testimonials">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+       
       </div>
    
       <div class="container profile">
@@ -95,19 +96,17 @@
     </section>
 
 <!-- ABOUT ME SECTION -->
-    <section id="about" class="container mt-5">
-        <h2 class="mb-5">Hi_</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam aperiam doloremque asperiores nemo repellat, ad voluptatibus tenetur, blanditiis quae voluptates vel commodi fugiat alias provident quo fuga sunt incidunt eum corrupti iusto eius maxime dolorem. Consequatur quibusdam eligendi recusandae nesciunt.</p>
-       <!-- <a href="./Documents/SELBY MDASHE - CURRICULUM VITAE-combined-combined.pdf" download> <button type="button" class="btn btn-primary rounded-pill text-center"><i class="fa-solid fa-arrow-down-to-bracket"></i>Download CV</button></a> -->
-   
+    <section id="about" class="container">
+        <h2 class="mb-5">Hello World_</h2>
+        <p class="mt-5">I am a hard-working individual who is passionate about technology. My passion for technology started when my mother brought home a PlayStation 2 console. I connected the console without needing a manual. I  found out that I had to learn coding  to build such technologies. I want to pursue a career in designing and developing websites. I still love to play video games. I am self taught in most of the things I do. I took an I.T course at college and I have not stopped trying to improve my skills since then. I have been taking online coding classes to sharpen my coding skills.</p>   
    <h6 class="mt-5 mb-3">TECHNICAL SKILLS</h6>
-   <table class="table table-hover table-borderless">
+   <table class="table table-hover table-borderless align-middle">
     <tbody>
       <tr>
-        <td class="fs-3">
-          <i class="fa-brands fa-html5"></i>
+        <td class="fs-5">
+          <i class="fa-brands fa-html5" data-aos="fade-right"></i>
           HTML
-          <!-- <div class="progress">
+           <div class="progress">
             <div
               class="progress-bar"
               role="progressbar"
@@ -118,12 +117,12 @@
             >
               70%
             </div>
-          </div> -->
+          </div>
         </td>
-        <td class="fs-3">
-          <i class="fa-brands fa-css3"></i>
+        <td class="fs-5">
+          <i class="fa-brands fa-css3" data-aos="fade-left"></i>
          CSS
-          <!--  <div class="progress">
+           <div class="progress">
             <div
               class="progress-bar"
               role="progressbar"
@@ -134,12 +133,13 @@
             >
               65%
             </div>
-          </div> -->
+          </div>
         </td>
-        <td class="fs-3">
-          <i class="fa-brands fa-js"></i>
+        <tr>
+        <td class="fs-5">
+          <i class="fa-brands fa-js" data-aos="fade-right"></i>
           JavaScript
-           <!--<div class="progress">
+          <div class="progress">
             <div
               class="progress-bar"
               role="progressbar"
@@ -150,14 +150,13 @@
             >
               35%
             </div>
-          </div> -->
+          </div>
         </td>
-      </tr>
-      <tr>
-        <td class="fs-3">
-          <i class="fa-brands fa-bootstrap"></i>
+ 
+        <td class="fs-5">
+          <i class="fa-brands fa-bootstrap" data-aos="fade-left"></i>
          Bootstrap
-           <!-- <div class="progress">
+           <div class="progress">
             <div
               class="progress-bar"
               role="progressbar"
@@ -168,12 +167,14 @@
             >
               50%
             </div>
-          </div> -->
+          </div>
         </td>
-        <td class="fs-3">
-          <i class="fa-brands fa-git-square"></i>
+        </tr>
+        <tr>
+        <td class="fs-5">
+          <i class="fa-brands fa-git-square" data-aos="fade-right"></i>
         Git
-            <!--  <div class="progress">
+            <div class="progress">
             <div
               class="progress-bar"
               role="progressbar"
@@ -184,12 +185,12 @@
             >
               45%
             </div>
-          </div> -->
+          </div>
         </td>
-        <td class="fs-3">
-          <i class="fa-brands fa-github"></i>
+        <td class="fs-5">
+          <i class="fa-brands fa-github" data-aos="fade-left"></i>
           GitHub
-          <!--  <div class="progress">
+           <div class="progress">
             <div
               class="progress-bar"
               role="progressbar"
@@ -200,12 +201,22 @@
             >
               60%
             </div>
-          </div> -->
+          </div>
         </td>
       </tr>
     </tbody>
   </table>
-  <!-- <h6 class="mt-5 mb-3">SOFT SKILLS</h6> -->
+  <div class="soft_skills">
+    <h6 class="mt-5 mb-3">SOFT SKILLS</h6>
+    <ul>
+      <li>Confidence</li>
+      <li>Learning</li>
+      <li>Empathy</li>
+      <li>Trustworthy</li>
+    <li>Honesty</li>
+    </ul>
+  </div>
+
 
 
     </section>
@@ -213,18 +224,83 @@
 
 
 <!-- RESUME SECTION -->
-    <section id="resume" class="container">
-        <h2 class="mb-5">Resume_</h2>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus iure totam inventore. Natus, rerum cumque! Repellat odio possimus dignissimos modi nesciunt dolores totam non placeat laborum ipsa dolor exercitationem iusto sapiente tempore voluptate inventore nobis blanditiis, sed harum tempora?</P>
-   <!-- <h6 class="mt-5 mb-3">EDUCATION</h6>
-   <ul>
-       <li>COLLEGE OF CAPE TOWN</li>
-   </ul> -->
+    <section id="resume">
+      <div class="container">
+      <h2 class="mb-3">Resume_</h2>
+
+      <!-- WORK EXPERIENCE
+      /////////////////-->
+      <div class="row bg-light">
+        <div class="col border-end border-top border-start border-bottom experience">
+          <h5 class="mt-5 mb-3">WORK EXPERIENCE</h5>
+          <hr />
+    
+          <h6>
+            <a href="https://www.younglings.capetown/" target="_blank"
+              >Younglings Africa (ABSA)</a
+            >
+          </h6>
+          <h6>Intern</h6>
+          <p>09/2020 - 03/2021</p>
+          <p class="location">Long Street, Cape Town</p>
+    
+          <h6 class="responsibilities">Responsibilities:</h6>
+          <ul class="duties_list">
+            <li>Designing and developing websites</li>
+            <li>Coding / Programming</li>
+            <li>Presentations</li>
+            <li>Problem solving</li>
+          </ul>
+    
+          <h6 class="mt-5">
+            <a href="https://www.citi.org.za/" target="_black"
+              >CapaCiTi - Cape Innovation & Technology Initiative</a
+            >
+          </h6>
+          <h6>Intern</h6>
+          <p>03/2020 - 08/2020</p>
+          <p class="location">Woodstock Exchange</p>
+    
+          <h6 class="responsibilities">Responsibilities:</h6>
+          <ul class="duties_list">
+            <li>Designing and developing websites</li>
+            <li>Application development</li>
+            <li>Coding / Programming</li>
+            <li>Presentations</li>
+            <li>Problem solving</li>
+          </ul>
+       <a href="./Documents/SELBY MDASHE - CURRICULUM VITAE-combined-combined.pdf" download> <button type="button" class="btn btn-primary rounded-pill text-center mb-3"><i class="fa-solid fa-arrow-down-to-bracket"></i>Download CV</button></a>
+        </div>
+        <div class="col border-top border-end border-bottom education">
+          <h5 class="mt-5 mb-3">EDUCATION</h5>
+          <hr />
+    
+          <h6>Collage of Cape Town</h6>
+          <h6>National Certificate (Vocational) Computer Sciences/I.T</h6>
+          <p>01/2017 - 12/2019</p>
+          <p class="location">Crawford Campus</p>
+    
+          <h6 class="subjects">Subjects:</h6>
+          <ul class="subjects_list">
+            <li>Computer Programming</li>
+            <li>Systems Analysis & Design</li>
+            <li>Data Communications & Networking</li>
+            <li>Office Data Processing</li>
+            <li>English First Additional Language</li>
+            <li>Mathematical Literacy</li>
+            <li>Life Orientation Skills / Computer Skills</li>
+          </ul>
+         <a href="./Documents/S MDASHE MATRIC.pdf" download> <button type="button" class="btn btn-primary rounded-pill text-center"><i class="fa-solid fa-arrow-down-to-bracket"></i>Download Certificate</button></a></div>
+      </div>
+      
+
+      
+    </div>
     </section>
 
     <!-- PROJECTS SECTION -->
     <section id="projects">
-        <div class="container mt-5">
+        <div class="container">
           
             <h2 class="mb-5">My projects_</h2>
             
@@ -250,9 +326,10 @@
       </div>
       <div class="modal-body">
         <img src="./Images/holiday_destination.png" alt="">
-<div>
+<div class="pt-4 pb-4">
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt perferendis nostrum, corporis facilis alias cumque beatae animi impedit debitis ea distinctio velit ullam harum earum iure deleniti? Odio, expedita quisquam.</p>
 </div>
+
       </div>
 
     </div>
@@ -280,7 +357,7 @@
       </div>
       <div class="modal-body">
         <img src="./Images/portfolio.png" alt="">
-<div>
+<div class="pt-4 pb-4">
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt perferendis nostrum, corporis facilis alias cumque beatae animi impedit debitis ea distinctio velit ullam harum earum iure deleniti? Odio, expedita quisquam.</p>
 </div>
       </div>
@@ -299,7 +376,6 @@
              <p class="tech border">HTML</p>
              <p class="tech border">CSS</p>
              <p class="tech border">Bootstrap</p>
-              <a href="https://ephemeral-pegasus-115bcf.netlify.app/" target="_blank">Visit Page</a>
              </div>
            </div>
          </div>
@@ -314,9 +390,14 @@
 </div>
 <div class="modal-body">
 <img src="./Images/mock_portfolio.png" alt="">
-<div>
+<div class="pt-4 pb-4">
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt perferendis nostrum, corporis facilis alias cumque beatae animi impedit debitis ea distinctio velit ullam harum earum iure deleniti? Odio, expedita quisquam.</p>
 </div>
+<div class="d-flex justify-content-around">
+  <a href="https://ephemeral-pegasus-115bcf.netlify.app/" target="_blank"><button type="button" class="btn btn-success">Live</button></a>
+<a href="https://github.com/Sabelo-Mdashe/Mock-Portfolio" target="_blank"><button type="button" class="btn btn-info">GitHub</button></a>
+</div>
+
 </div>
 
 </div>
@@ -328,7 +409,7 @@
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-<section id="testimonials" class="mt-5">
+<section id="testimonials" class="mb-3">
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -339,29 +420,31 @@
       <div class="carousel-item active">
 
         <div class="carousel-caption d-none d-md-block">
-          <h5>Person 1</h5>
-          <p>Occupation</p>
+          <img src="./Images/godwin-2.jfif" alt="">
+          <h5>Godwin Dzvapatsva</h5>
+          <p>Lecturer</p>
           <hr>
-          <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit sed sequi. Aliquam, itaque. Corrupti odit, delectus quibusdam fuga at, iusto facere similique dignissimos consectetur corporis nemo blanditiis dolor animi? <i class="fa-solid fa-quote-right"></i></p>
+          <p><i class="fa-solid fa-quote-left"></i> Sabelo is interested and engaged in his lessons and always completes his projects on time. He has a gentle personality, which allows him to work with any of his classmates. Sabelo has proven to have a vital grasp of the HTML, CSS, and Bootstrap topics we have covered in class. Sabelo is such a smart student that he should continue to do well. <i class="fa-solid fa-quote-right"></i></p>
         </div>
       </div>
       <div class="carousel-item">
 
         <div class="carousel-caption d-none d-md-block">
-          <img src="./Images/Sabelo (2).JPG" alt="" class="">
-          <h5>Selby Mdashe</h5>
-          <p>Developer</p>
+          <img src="./Images/Ashton (4).JPG" alt="">
+          <h5>Ashton Abrahams</h5>
+          <p>Collegue</p>
           <hr>
-          <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque minima placeat maxime non dicta rerum accusamus provident accusantium, recusandae impedit quae rem ab aliquam ipsa atque omnis tempora magni fugiat! <i class="fa-solid fa-quote-right"></i></p>
+          <p><i class="fa-solid fa-quote-left"></i> Sabelo is a very skilled individual, he applies himself and excels in everything he does. A remarkable person with both personality and a valuable work ethic, a great asset to any team. <i class="fa-solid fa-quote-right"></i></p>
         </div>
       </div>
       <div class="carousel-item">
 
         <div class="carousel-caption d-none d-md-block">
-          <h5>Person 3</h5>
-          <p>Occupation</p>
+          <img src="./Images/LUNGA.PNG" alt="">
+          <h5>Lunga Booi</h5>
+          <p>Collegue</p>
           <hr>
-          <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam necessitatibus rerum cumque! Delectus earum sint reprehenderit ab labore, dolore, amet sunt consectetur, laudantium nulla exercitationem. Tempora doloremque cum corporis dicta. <i class="fa-solid fa-quote-right"></i></p>
+          <p><i class="fa-solid fa-quote-left"></i> Sabelo is a good person to work with. He has passion for his work and likes to explore new ideas. He is very intellectual. He can manage his time and work with new people. <i class="fa-solid fa-quote-right"></i></p>
         </div>
       </div>
     </div>
@@ -377,7 +460,7 @@
 </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact" class="container-fluid">
+<section id="contact" class="container-fluid mb-3">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -420,7 +503,12 @@
 </section>
 
 <footer class="bg-dark">
-  Get in touch with me
+  <div class="d-flex justify-content-around text-light pt-2">
+    <div><a href="https://www.facebook.com/profile?id=100008415544700" target="_blank"><i class="fa-brands fa-facebook"></i> FACEBOOK</a></div>
+    <div><i class="fa-solid fa-copyright"></i> 2022 Selby Sabelo Mdashe. All Rights Reserved</div>
+    <div><a href="#" target="_blank"><i class="fa-solid fa-circle-up fs-3"></i></a></div>
+  </div>
+ </div>
 </footer>
 
     <!--EXTERNAL SCRIPTS -->
@@ -430,5 +518,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/5f5e9bd818.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
