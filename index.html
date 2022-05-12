@@ -220,7 +220,7 @@
 
 
     </section>
-    <hr class="mt-5 mb-5">
+    <hr class="mt-5 mb-5 horizontal">
 
 
 <!-- RESUME SECTION -->
@@ -370,7 +370,7 @@
             <img src="./Images/mock_portfolio.png" alt="" class="img-fluid projects_imgs rounded">
            <div class="col">
              <h4 class="mt-5 mb-5">Mock Portfolio</h4>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio natus at vero quam sit totam cupiditate ipsa ratione? Unde.</p>
+             <p>This project I was given to test my abilities to use basic HTML and CSS to build my first ever digital portfolio.</p>
              <div class="technologies d-flex  mt-5 pe-2">
              <p>USED TECHNOLOGIES:</p>
              <p class="tech border">HTML</p>
@@ -391,7 +391,7 @@
 <div class="modal-body">
 <img src="./Images/mock_portfolio.png" alt="" class="img-fluid">
 <div class="pt-4 pb-4">
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt perferendis nostrum, corporis facilis alias cumque beatae animi impedit debitis ea distinctio velit ullam harum earum iure deleniti? Odio, expedita quisquam.</p>
+<p>This was the first attempt at making my profile using only HTML and CSS. I was given this project at Life Choices Academy and got an overall score of 76/100 and some feedback on where I needed to improve my skills. Below are links to the live portfolio and another is a link to GitHub</p>
 </div>
 <div class="d-flex justify-content-around">
   <a href="https://ephemeral-pegasus-115bcf.netlify.app/" target="_blank"><button type="button" class="btn btn-success">Live</button></a>
@@ -410,11 +410,13 @@
 
     <!-- TESTIMONIALS SECTION -->
 <section id="testimonials" class="mb-3">
+  <div class="container-fluid">
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner bg-dark">
       <div class="carousel-item active">
@@ -430,11 +432,11 @@
       <div class="carousel-item">
 
         <div class="carousel-caption d-none d-md-block">
-          <img src="./Images/Ashton (4).JPG" alt="" class="img-fluid">
-          <h5>Ashton Abrahams</h5>
+          <img src="./Images/Lee.png" alt="" class="img-fluid">
+          <h5>Le-Andre Moritz</h5>
           <p>Collegue</p>
           <hr>
-          <p><i class="fa-solid fa-quote-left"></i> Sabelo is a very skilled individual, he applies himself and excels in everything he does. A remarkable person with both personality and a valuable work ethic, a great asset to any team. <i class="fa-solid fa-quote-right"></i></p>
+          <p><i class="fa-solid fa-quote-left"></i> Sabelo is a diligent worker, always stays focused and works hard. He has a good attention for detail and a keen eye for neat and professional design. <i class="fa-solid fa-quote-right"></i></p>
         </div>
       </div>
       <div class="carousel-item">
@@ -447,6 +449,16 @@
           <p><i class="fa-solid fa-quote-left"></i> Sabelo is a good person to work with. He has passion for his work and likes to explore new ideas. He is very intellectual. He can manage his time and work with new people. <i class="fa-solid fa-quote-right"></i></p>
         </div>
       </div>
+      <div class="carousel-item">
+
+        <div class="carousel-caption d-none d-md-block">
+          <img src="./Images/Ashton (4).JPG" alt="" class="img-fluid">
+          <h5>Ashton Abrahams</h5>
+          <p>Collegue</p>
+          <hr>
+          <p><i class="fa-solid fa-quote-left"></i> Sabelo is a very skilled individual, he applies himself and excels in everything he does. A remarkable person with both personality and a valuable work ethic, a great asset to any team. <i class="fa-solid fa-quote-right"></i></p>
+        </div>
+      </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -457,6 +469,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+</div>
 </section>
 
 <!-- CONTACT SECTION -->
@@ -487,12 +500,12 @@
   action="https://formspree.io/f/moqryjkk"
   method="POST" class="gap-3"
 >
-<input type="text" name="name" placeholder="Your name" class="rounded">
-    <input type="email" name="email" placeholder="Your e-mail" class="rounded">
+<input type="text" name="name" placeholder="Your name" class="rounded user_name">
+    <input type="email" name="email" placeholder="Your e-mail" class="rounded user_email">
 
 
 
-    <textarea name="message" placeholder="Type your message here" class="rounded"></textarea>
+    <textarea name="message" placeholder="Type your message here" class="rounded user_mssg"></textarea>
 
   <!-- your other form fields go here -->
   <button type="submit" class="btn-primary rounded-pill">SEND</button>

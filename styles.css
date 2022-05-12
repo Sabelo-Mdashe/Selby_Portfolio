@@ -284,23 +284,79 @@ footer > div {
 }
 
 @media screen and (max-width: 1000px) {
-  #landing img {
-    display: none;
+  .profile {
+    display: block;
   }
 
-  #about h2 {
-    padding-top: 50px;
+  #landing img {
+    margin-top: 100px;
+  }
+
+  .profile_text {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0 !important;
+  }
+
+  .profile_text > div {
+    margin-top: 0 !important;
+    justify-content: unset;
+    gap: 30px;
+  }
+
+  .skewed {
+    min-height: 100vh;
+  }
+
+  #about > h2 {
+    margin-top: 0;
+  }
+
+  .projects {
+    flex-direction: column;
   }
 }
 
-/* @media screen and (max-width: 993px) {
-  #about h2 {
-    padding-top: 0;
+/* @media screen and (max-width: 991.2px) {
+  #about > h2 {
+    padding-top: 80px;
   }
 } */
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767.2px) {
+  #about > p {
+    padding-right: 0;
+  }
+
+  #resume > div > div {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 415px) {
   .skewed {
-    height: 80%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #about > h2 {
+    padding-top: 0;
+  }
+
+  .user_name,
+  .user_email,
+  .user_mssg,
+  form > button {
+    width: 250px;
+  }
+
+  .horizontal {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .navbar {
+    width: 375px;
   }
 }
