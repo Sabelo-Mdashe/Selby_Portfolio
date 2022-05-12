@@ -372,4 +372,9 @@ footer > div {
   .contact_info {
     padding-right: 0;
   }
+
+  footer > div {
+    flex-direction: column;
+    height: auto !important;
+  }
 }
