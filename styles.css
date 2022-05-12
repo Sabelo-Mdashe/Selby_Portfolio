@@ -82,6 +82,13 @@ form > button {
   font-size: large;
 }
 
+.brief2 {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Abhaya Libre", serif;
+  font-size: large;
+}
+
 /* ABOUT SECTION STYLES */
 #about {
   padding-top: 50px;
@@ -360,5 +367,9 @@ footer > div {
 
   .navbar {
     width: 375px;
+  }
+
+  .contact_info {
+    padding-right: 0;
   }
 }
