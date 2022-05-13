@@ -5,6 +5,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 
 /* [data-aos] {
   pointer-events: none;
@@ -235,7 +238,10 @@ button {
 .contact_info {
   padding-right: 150px;
 }
-
+.contact_info p {
+  width: 88%;
+  overflow-x: hidden;
+}
 .message {
   padding-top: 80px;
 }
@@ -485,8 +491,36 @@ footer > div {
   }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 320px) {
   .navbar {
-    width: 280px;
+    width: auto;
+  }
+
+  .brief {
+    font-size: medium;
+  }
+
+  .addrss {
+    padding-top: 25px;
+  }
+
+  .brief,
+  .brief2,
+  #about > p,
+  h6,
+  .soft_skills,
+  .duties_list,
+  .subjects_list,
+  button,
+  .location,
+  .experience > p,
+  .education > p,
+  #projects,
+  #contact {
+    font-size: small;
+  }
+
+  .email {
+    overflow-wrap: break-word;
   }
 }
