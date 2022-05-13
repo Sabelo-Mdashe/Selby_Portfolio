@@ -377,4 +377,33 @@ footer > div {
     flex-direction: column;
     height: auto !important;
   }
+
+  .education > a > button {
+    margin-bottom: 10px;
+  }
+
+  #testimonials {
+    height: auto;
+  }
+
+  .carousel-caption {
+    /* position: relative; */
+    height: 500px;
+  }
+
+  .carousel-caption > img {
+    height: auto;
+  }
+
+  .carousel-inner {
+    height: 650px;
+  }
+
+  .ash {
+    height: 300px !important;
+  }
+
+  .lee {
+    height: 300px !important;
+  }
 }
